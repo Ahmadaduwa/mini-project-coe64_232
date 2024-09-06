@@ -3,7 +3,7 @@
  */
 public class test {
     public static void main(String[] args) {
-        println(" Kuy ");
+        println("์Boos Kuy  yai");
     }
    
 }
