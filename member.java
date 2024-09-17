@@ -1,17 +1,22 @@
-public class member {
+public class Member {
     private String id; //รหัสสมาชิก
     private String name; //ชื่อสมาชิก
     private String locate; //ที่อยู่
     private String date; //วันเดือนปีเกิด
     private String number; //เบอร์โทร
     
-    public member(String id, String n, String l, String d, String num){
+    public Member(){
+
+    }
+    
+    public Member(String id, String n, String l, String d, String num){
         this.id = id;
         this.name = n;
         this.locate = l;
         this.date = d;
         this.number = num;
     }
+
 
     public String getId(){
         return this.id;
