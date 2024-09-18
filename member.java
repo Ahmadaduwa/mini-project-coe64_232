@@ -1,22 +1,29 @@
-public class Member {
-    private String id; //รหัสสมาชิก
-    private String name; //ชื่อสมาชิก
-    private String locate; //ที่อยู่
-    private String date; //วันเดือนปีเกิด
-    private String number; //เบอร์โทร
-    
-    public Member(){
+import java.util.ArrayList;
 
-    }
-    
-    public Member(String id, String n, String l, String d, String num){
+public class Member {
+    private String id;
+    private String name;
+    private String locate;
+    private String date;
+    private String number;
+    private ArrayList<Product> purchasedProducts; //Association
+
+    public Member(String id, String n, String l, String d, String num) {
         this.id = id;
         this.name = n;
         this.locate = l;
         this.date = d;
         this.number = num;
+        this.purchasedProducts = new ArrayList<>(); 
     }
 
+    public void buyProduct(Product product) {
+        this.purchasedProducts.add(product);
+    }
+
+    public ArrayList<Product> getPurchasedProducts() {
+        return purchasedProducts;
+    }
 
     public String getId(){
         return this.id;

@@ -1,14 +1,14 @@
 public class DetailsPD {
-    private  String LocateID ; // รหัสจัดส่ง
-    private String  ProductID ; // รหัสสินค้า
-    private int  QOPPU; //จำนวนสินค้าต่อหน่วย
-    private double  Price ; // ราคาสินค้าต่อหน่วย
+    private String LocateID;
+    private String ProductID;
+    private int QOPPU;
+    private double Price;
 
-    public DetailsPD (String IDl , String IDp , int  QoU , double P){
-        this.LocateID = IDl ;
-        this.ProductID = IDp ;
-        this.QOPPU = QoU ;
-        this.Price = P ;
+    public DetailsPD(String IDl, String IDp, int QoU, double P) {
+        this.LocateID = IDl;
+        this.ProductID = IDp;
+        this.QOPPU = QoU;
+        this.Price = P;
     }
 
     public String getLocateID(){

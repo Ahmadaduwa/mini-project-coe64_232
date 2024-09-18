@@ -1,17 +1,17 @@
 public class Product {
-    private String id_product; // รหัสสินค้า
-    private String name_product; // ชื่อสินค้า
-    private String type_product; // ประเภทสินค้า
-    private double price; // ราคาสินค้า
-    private int product_quantity; // จำนวนสินค้า
-    private double cost_Product; // ราคาทุน
+    private String id_product;
+    private String name_product;
+    private String type_product;
+    private double price;
+    private int product_quantity;
+    private double cost_Product;
 
     public Product(String id, String n, String type, double p, int p_q, double cost) {
         this.id_product = id;
         this.name_product = n;
         this.type_product = type;
         this.price = p;
-        this.product_quantity = p_q;        
+        this.product_quantity = p_q;
         this.cost_Product = cost;
     }
 
@@ -61,5 +61,9 @@ public class Product {
 
     public void setPhoneNumberEmployee(double cost) {
         this.cost_Product = cost;
+    }
+
+    public double calculateProfit() {
+        return this.price - this.cost_Product;
     }
 }

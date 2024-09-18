@@ -1,12 +1,12 @@
 import java.util.Date;
 
-public class Employee extends Member {
-    private String idEmployee; // รหัสพนักงาน
-    private String nameEmployee; // ชื่อพนักงาน
-    private String addressEmployee; // ที่อยู่พนักงาน
-    private Date birthDate; // วันเกิดพนักงาน
-    private double salaryEmployee; // เงินเดือนพนักงาน
-    private String phoneNumberEmployee; // เบอร์โทรศัพพนักงาน
+public class Employee extends Member implements Payable { 
+    private String idEmployee;
+    private String nameEmployee;
+    private String addressEmployee;
+    private Date birthDate;
+    private double salaryEmployee;
+    private String phoneNumberEmployee;
 
     public Employee(String id, String n, String l, String d, String num, String idEm, String nameEm, String addressEm, Date birthDateEm, double salaryEm, String phoneNumEm) {
         super(id, n, l, d, num);
@@ -18,6 +18,10 @@ public class Employee extends Member {
         this.phoneNumberEmployee = phoneNumEm;
     }
 
+    @Override
+    public double calculatePay() {
+        return this.salaryEmployee;
+    }
 
     public String getIdEmployee() {
         return this.idEmployee;
