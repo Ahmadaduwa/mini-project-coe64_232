@@ -13,16 +13,16 @@
             members.add(new Member("M001", "John Doe", "123 Street", "1990-01-01", "0123456789"));
             members.add(new Member("M002", "Jane Doe", "456 Avenue", "1985-03-05", "0987654321"));
 
-        ArrayList<Employee> employees = new ArrayList<>();
-        Date birthDate1 = new Date(90, 0, 1); 
-        Date birthDate2 = new Date(85, 2, 5);
-        employees.add(new Employee("M001", "John Doe", "123 Street", "1990-01-01", "0123456789",
-                "E001", "John Smith", "123 Street", birthDate1, 25000.0, "0123456789"));
-        employees.add(new Employee("M002", "Jane Doe", "456 Avenue", "1985-03-05", "0987654321",
-                "E002", "Jane Smith", "456 Avenue", birthDate2, 30000.0, "0987654321"));
-                
-        Scanner scanner = new Scanner(System.in);
-        boolean exit = false;
+            ArrayList<Employee> employees = new ArrayList<>();
+            Date birthDate1 = new Date(90, 0, 1); 
+            Date birthDate2 = new Date(85, 2, 5);
+            employees.add(new Employee("M001", "John Doe", "123 Street", "1990-01-01", "0123456789",
+                    "E001", "John Smith", "123 Street", birthDate1, 25000.0, "0123456789"));
+            employees.add(new Employee("M002", "Jane Doe", "456 Avenue", "1985-03-05", "0987654321",
+                    "E002", "Jane Smith", "456 Avenue", birthDate2, 30000.0, "0987654321"));
+                    
+            Scanner scanner = new Scanner(System.in);
+            boolean exit = false;
 
             while (!exit) {
                 System.out.println("\n==== Main Menu ====");
